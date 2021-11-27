@@ -1,0 +1,31 @@
+.tr-qty{
+    width: 77px;
+    color: $color-grey-5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    & > span{
+        min-width: 40px;
+        display: inline-block;
+        text-align: center;
+    }
+    &__btn{
+        padding: 18px 14px;
+        display: flex;
+        transition: background-color 0.3s;
+        border-radius: 4px;
+        background-color: $color-white-1;
+        svg{
+            width: 14px;
+            height: 14px;
+            fill: $color-grey-6;
+            transition: 0.3s;
+        }
+        &:hover{
+            background-color: $color-green;
+            svg{
+                fill: $color-white;
+            }
+        }
+    }
+}
